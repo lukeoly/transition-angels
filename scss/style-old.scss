@@ -1,0 +1,635 @@
+// Imports
+@import 'foundation';
+@import 'general_foundicons';
+@import 'social_foundicons';
+@import 'colors';
+/* General Styles & Pseduo Classes */
+
+
+body {
+  background-color: #ddd;
+}
+
+.thick-hr {
+  border: 6px solid #fff;
+  position: relative;
+}
+
+.text-book {
+  font-weight: 300;
+}
+
+.text-xbold {
+  font-weight: 800;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.text-pink {
+  color: $base_1;
+}
+
+.highlight-color {
+  color: $base_1;
+}
+
+section {
+  margin-bottom: 40px !important;
+}
+
+.divider {
+  border-top: 14px solid $base_1;
+  border-bottom: 14px solid $base_1;
+}
+
+.hollow-button {
+  padding: 15px;
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+
+.small-hollow-button {
+  padding: 8px;
+  border: 4px solid #fff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #bbb;
+}
+/* Nav Styles */
+
+#main-nav {
+  margin-bottom: 100px;
+  z-index: 300;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+#nav-container {
+  background-color: #ddd;
+  border-bottom: 4px solid $base_1;
+  -webkit-box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.3);
+  width: 100%;
+}
+
+#main-nav ul {
+  list-style: none;
+  margin-bottom: 0px;
+  float: right;
+}
+
+#main-nav li:first-child {
+  border-left: 1px solid #bbb;
+}
+
+#main-nav li {
+  float: left;
+  color: #222;
+  cursor: pointer;
+  border-right: 1px solid #bbb;
+  font-weight: bold;
+}
+
+#main-nav li:hover {
+  background-color: #ccc;
+}
+
+#main-nav a {
+  color: #222;
+  padding: 8px 20px 8px 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+#pull {
+  display: none;
+}
+
+#logo {
+  float: left;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#logo a {
+  padding: 0px;
+}
+
+.overflow {
+  overflow: hidden;
+}
+/*Home Styles */
+
+#home {
+  border-bottom: 14px solid $base_1;
+  padding-top: 17%;
+  padding-bottom: 0%;
+  background: url('../images/landing-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home-title {
+  height: 500px;
+}
+
+#home-title h1 {
+  font-size: 4.5em;
+  line-height: 0.8;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+/* Services */
+
+.page-callout {
+  margin-bottom: 38px;
+}
+
+#services-bar {
+  background-color: $base_1;
+  padding: 20px;
+  overflow: hidden;
+  color: #fff;
+}
+
+#services-bar i {
+  font-size: 3.5em;
+  color: #fff;
+}
+
+.service {
+  border-right: 3px solid;
+}
+
+.service:last-child {
+  border-right: 0px;
+}
+/* Testimonials */
+
+.testimonials {
+  padding-bottom: 8%;
+  padding-top: 8%;
+  background: url('http://placehold.it/1200x800');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.testimonial {
+  background-color: rgba($silver_light, 0.7);
+  padding: 15px;
+}
+
+.testimonial h4 {
+  font-style: italic;
+}
+
+.testimonial-triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid rgba(160, 160, 160, 0.7);
+}
+
+.testimonial i {
+  font-size: 5em;
+  display: inline-block;
+  padding-top: 19px;
+}
+/* Portfolio */
+
+.portfolio-overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  display: none;
+  padding: 52px 10px 10px 10px;
+  background-color: rgba(255, 163, 0, 0.8);
+}
+
+#portfolio-container {
+  margin-bottom: 40px;
+}
+
+.isotope-item {
+  z-index: 2;
+  width: 302px;
+  height: 180px;
+  overflow: hidden;
+}
+
+.isotope-hidden.isotope-item {
+  z-index: 1;
+}
+
+#filters {
+  list-style: none;
+  overflow: hidden;
+  margin: 0px;
+  display: inline-block;
+}
+
+#filters li:first-child {
+  margin-left: 0px;
+}
+
+#filters li {
+  float: left;
+  margin-left: 15px;
+}
+
+#filters li a {
+  font-weight: 800;
+  color: #222;
+  font-size: 17px;
+}
+
+.active-filter {
+  border-bottom: 3px solid #222;
+}
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+  -moz-transition-duration: 0.8s;
+  -ms-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+  -moz-transition-property: height, width;
+  -ms-transition-property: height, width;
+  -o-transition-property: height, width;
+  transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -ms-transition-property: -ms-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -ms-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+/* Portfolio Single */
+
+.project-slideshow {
+  height: 400px;
+  overflow: hidden;
+  border-bottom: 14px solid $base_1;
+}
+
+.project-description h3 {
+  margin-bottom: 0px;
+}
+
+.project-description h4 {
+  margin-top: 5px;
+}
+
+.project-details {
+  background-color: $base_1;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.project-details h5 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.project-triangle {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 30px solid #d49628;
+  margin-bottom: 30px;
+}
+
+.project-triangle-right {
+  width: 0;
+  height: 0;
+  border-right: 40px solid transparent;
+  border-left: 0px solid transparent;
+  border-top: 30px solid #d49628;
+  margin-bottom: 30px;
+}
+/* Clients */
+
+#clients {
+  padding-bottom: 8%;
+  padding-top: 8%;
+  background: url('http://placehold.it/1200x800');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#clients h2 {
+  margin-bottom: 60px;
+  margin-top: 0px;
+}
+
+#clients img {
+  width: 200px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+/* About US Styles */
+
+.skills ul {
+  list-style: none;
+}
+
+.skills li {
+  height: 30px;
+  background-color: $base_1;
+  margin-bottom: 20px;
+  padding: 5px 0px 0px 5px;
+}
+
+.skills li h5 {
+  margin: 0px;
+}
+
+.web-development {
+  width: 75%;
+}
+
+.graphic-design {
+  width: 95%;
+}
+
+.seo {
+  width: 65%;
+}
+
+.branding-identity {
+  width: 100%;
+}
+
+.our-team {
+  margin-bottom: 80px;
+}
+
+.our-team img {
+  height: 250px;
+  max-width: 200%;
+  position: relative;
+  top: 2px;
+}
+
+.team-member {
+  overflow: hidden;
+}
+
+.team-image-wrap {
+  overflow: hidden;
+}
+
+.team-member-title {
+  background-color: $base_1;
+  padding: 5px 0px 5px 11px;
+}
+
+.team-member-title h5 {
+  margin: 5px 0px 0px 0px;
+}
+
+.team-member-title h6 {
+  margin: 7px 0px 5px 0px;
+}
+
+.team-member p {
+  background-color: #ccc;
+  padding: 10px;
+  margin-bottom: 0px;
+}
+
+.team-hover {
+  position: absolute;
+  top: 0px;
+  width: 90.5%;
+  height: 254px;
+  background-color: rgba(255, 163, 0, 0.8);
+  font-size: 4em;
+  display: none;
+  z-index: 200;
+}
+
+.team-hover i {
+  margin-top: 15px;
+  display: inline-block;
+}
+/* Contact Styles */
+
+#form-name,
+#form-email {
+  height: 40px;
+  background-color: #ccc;
+}
+
+#form-msg {
+  height: 130px;
+  background-color: #ccc;
+}
+
+#form-send {
+  height: 130px;
+  border: 4px solid #222;
+  color: #222;
+  font-size: 4em;
+  cursor: pointer;
+}
+
+#form-send:hover {
+  border: 4px solid #777;
+}
+
+#form-send h4 {
+  margin-top: 0px;
+}
+
+#form-send i {
+  margin-top: 15px;
+  display: inline-block;
+}
+
+#bottom-contact {
+  margin-bottom: 0px !important;
+}
+
+#google-map {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 14px solid $base_1;
+  -webkit-box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 7px 12px 0px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+#bottom-social {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  background: url('http://placehold.it/1200x800');
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 0px !important;
+}
+
+#bottom-social h3 {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+#bottom-social i {
+  font-size: 3.5em;
+  margin-left: 35px;
+}
+
+.social-foundicon-twitter {
+  margin-left: 0px !important;
+}
+
+#details-error-wrap {
+  display: none;
+}
+
+@media only screen and (max-width: 480px) {
+  #home-title {
+    height: 450px;
+  }
+  #pull {
+    display: block;
+    text-align: right;
+    height: 66px;
+    padding-top: 15px;
+  }
+  #main-nav li {
+    float: none;
+  }
+  .pull-toggle {
+    width: auto !important;
+  }
+  #main-nav a {
+    width: 100%;
+    text-align: center;
+  }
+  #main-nav ul {
+    float: none;
+  }
+  #nav-container {
+    height: 66px;
+    overflow: hidden;
+  }
+  #home-title h1 {
+    font-size: 4em;
+  }
+  #home {
+    background-attachment: scroll;
+    padding-top: 30%;
+  }
+  .team-member {
+    padding-right: 15px;
+    margin-bottom: 30px;
+  }
+  .team-image-wrap {
+    overflow: hidden;
+  }
+  .team-hover {
+    width: 92%;
+  }
+  #portfolio-container {
+    margin-left: 7px;
+  }
+  .project-slideshow {
+    height: auto;
+  }
+  .service {
+    border-right: none;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+  }
+  .service:last-child {
+    border-bottom: none;
+  }
+  .full-bg {
+    background-attachment: scroll !important;
+  }
+  #bottom-social i {
+    font-size: 3em;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .full-bg {
+    background-attachment: scroll !important;
+  }
+  #portfolio-container {
+    margin-left: 65px;
+  }
+}
