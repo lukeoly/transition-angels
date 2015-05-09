@@ -7,9 +7,7 @@
   font-style: normal;
 }
 
-
 /* global foundicon styles */
-
 [class*="foundicon-"] {
   display: inline;
   width: auto;
@@ -19,16 +17,16 @@
   background-image: none;
   background-position: 0 0;
   background-repeat: repeat;
-  &:before {
-    font-family: "GeneralFoundicons";
-    font-weight: normal;
-    font-style: normal;
-    text-decoration: inherit;
-  }
+}
+
+[class*="foundicon-"]:before {
+  font-family: "GeneralFoundicons";
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
 }
 
 /* icons */
-
 .foundicon-settings:before {
   content: "\f000";
 }

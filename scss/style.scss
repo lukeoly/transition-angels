@@ -1,8 +1,9 @@
 // Imports
-@import 'foundation';
+@import 'foundation.min';
 @import 'general_foundicons';
 @import 'social_foundicons';
 @import 'colors';
+@import 'fonts';
 
 $space : 15px;
 
@@ -28,12 +29,18 @@ $space : 15px;
 	//Instead of the line below you could use @includetransition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
 	transition-duration: 0s;
 	background-color: $grey-lightest;
+}
 body {
-
+font-family: $font-stack;
 
 }
+h5 {
+  a {
+    color: inherit;
+  }
+}
+
 .thick-hr {
-}
 	border: 6px solid $white;
 	position: relative;
 }
@@ -83,37 +90,47 @@ section {
 	position: fixed;
 	width: 100%;
 	top: 0;
-	ul {
-		list-style: none;
-		margin-bottom: 0;
-		float: right;
+	ul.nav-bar {
+    height: auto;
+    margin: 0;
+    float: right;
+    list-style: none;
 	}
 	li {
 		float: left;
-		color: $grey-dark;
-		cursor: pointer;
-		border-right: 1px solid $grey-light;
-		font-weight: bold;
+    overflow: auto;
+    color: $grey-dark;
+    cursor: pointer;
+    border: none;
+    border-right: 1px solid $grey-light;
+    font-weight: bold;
+    line-height: 20px;
 		&:first-child {
 			border-left: 1px solid $grey-light;
 		}
-		&:hover {
-			background-color: $grey-lighter;
+    &.active {
+      a {
+  			background-color: $grey-lighter;
+      }
+    }
+  }
+  a {
+    color: $grey-dark;
+    padding: 8px 20px;
+    display: inline-block;
+    background-color: $grey-lightest;
+    &:hover {
+      background-color: $grey-lighter;
 		}
 	}
-	a {
-		color: $grey-dark;
-		padding: 8px 20px;
-		display: inline-block;
-		background-color: $grey-lightest;
-	}
 	#nav-container {
-		text-align: center;
-		-webkit-box-shadow: 0 0 3px 3px $black_30;
-		background-color: $grey-lightest;
-		border-bottom: 4px solid $primary;
-		box-shadow: 0 0 3px 3px $black_30;
 		width: 100%;
+    overflow: auto;
+    text-align: center;
+    -webkit-box-shadow: 0 0 3px 3px $black_30;
+    background-color: $grey-lightest;
+    border-bottom: 4px solid $primary;
+    box-shadow: 0 0 3px 3px $black_30;
 	}
 	#pull {
 		display: none;
@@ -137,7 +154,7 @@ section {
 		border-bottom: 14px solid $primary;
 		padding-top: 17%;
 		padding-bottom: 0;
-		background: url('http://placehold.it/1200x800');
+		background: url('../images/TA-hero.jpg');
 		background-size: cover;
 		background-attachment: fixed;
 	}
@@ -147,6 +164,13 @@ section {
 			font-size: 6em;
 			line-height: 0.8;
 		}
+    h4 {
+      color: $primary;
+    }
+    img.arrow-inline {
+      padding-right: $space;
+      vertical-align: middle;
+    }
 	}
 .rslides {
 	position: relative;
@@ -198,7 +222,7 @@ section {
 .testimonials {
 	padding-bottom: 8%;
 	padding-top: 8%;
-	background: url('http://placehold.it/1200x800');
+	background: url('../images/TA-hero-blur.jpg');
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -344,13 +368,13 @@ section {
 }
 .skills {
 	ul {
-		list-style: none;
+		// list-style: none;
 	}
 	li {
-		height: ($space) * 2;
-		background-color: $primary;
-		margin-bottom: 20px;
-		padding: 5px 0 0 5px;
+		// height: ($space) * 2;
+		// background-color: $primary;
+		// margin-bottom: 20px;
+		// padding: 5px 0 0 5px;
 		h5 {
 			margin: 0;
 		}
@@ -381,7 +405,7 @@ section {
 	overflow: hidden;
 	p {
 		background-color: $grey-lighter;
-		padding: 10px;
+		padding: 10px 15px 20px;
 		margin-bottom: 0;
 	}
 }
@@ -390,9 +414,14 @@ section {
 }
 .team-member-title {
 	background-color: $primary;
-	padding: 5px 0 5px 11px;
+	padding: 10px 0 10px 15px;
 	h5 {
 		margin: 5px 0 0;
+    small {
+      color: $white;
+      font-size: 70%;
+      vertical-align: middle;
+    }
 	}
 	h6 {
 		margin: 7px 0 5px;
@@ -412,20 +441,33 @@ section {
 		display: inline-block;
 	}
 }
+
+
+
 #form-name {
 	height: 40px;
-	background-color: $grey-lighter;
+	background-color: #eee;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+
 }
 #form-email {
-	height: 40px;
-	background-color: $grey-lighter;
+  height: 40px;
+  background-color: #eee;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 #form-msg {
-	height: 1($space) * 2;
-	background-color: $grey-lighter;
+  height: ($space) * 9;
+  background-color: #eee;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 #form-send {
-	height: 1($space) * 2;
+	height: ($space) * 9;
 	border: 4px solid $grey-dark;
 	color: $grey-dark;
 	font-size: 4em;
