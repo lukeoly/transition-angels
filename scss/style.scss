@@ -3,597 +3,97 @@
 @import 'general_foundicons';
 @import 'social_foundicons';
 @import 'colors';
-@import 'fonts';
+@import 'annimations';
+@import 'buttons';
+@import 'contact';
+@import 'nav';
+@import 'sections';
+@import 'typography';
+@import 'utilities';
 
-$space : 15px;
 
-//@extend-elements
-//original selectors
-//.isotope, .isotope .isotope-item
-%extend_1 {
-	-webkit-transition-duration: 0.8s;
-	-moz-transition-duration: 0.8s;
-	-ms-transition-duration: 0.8s;
-	-o-transition-duration: 0.8s;
-	//Instead of the line below you could use @includetransition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
-	transition-duration: 0.8s;
-}
 
-//original selectors
-//.isotope.no-transition, .isotope.no-transition .isotope-item, .isotope .isotope-item.no-transition
-%extend_2 {
-	-webkit-transition-duration: 0s;
-	-moz-transition-duration: 0s;
-	-ms-transition-duration: 0s;
-	-o-transition-duration: 0s;
-	//Instead of the line below you could use @includetransition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
-	transition-duration: 0s;
-	background-color: $grey-lightest;
-}
-body {
-font-family: $font-stack;
 
-}
-h5 {
-  a {
-    color: inherit;
+
+// Media Queries
+@media only screen and (max-width: 480px) {
+  #home-title {
+    height: 450px;
+    h1 {
+      font-size: 4em;
+    }
   }
-}
-
-.thick-hr {
-	border: 6px solid $white;
-	position: relative;
-}
-.text-book {
-	font-weight: 300;
-}
-.text-xbold {
-	font-weight: 800;
-}
-.text-bold {
-	font-weight: 700;
-}
-.text-white {
-	color: $white;
-}
-.highlight-color {
-	color: $primary;
-}
-section {
-	margin-bottom: 40px !important;
-}
-.divider {
-	border-top: 14px solid $primary;
-	border-bottom: 14px solid $primary;
-}
-.hollow-button {
-	padding: $space;
-	border: 4px solid $white;
-	cursor: pointer;
-}
-.small-hollow-button {
-	padding: 8px;
-	border: 4px solid $white;
-	cursor: pointer;
-	display: inline-block;
-}
-.triangle-right {
-	width: 0;
-	height: 0;
-	border-left: 40px solid transparent;
-	border-right: 0 solid transparent;
-	border-top: ($space) * 2 solid $grey-light;
-}
-#main-nav {
-	margin-bottom: 100px;
-	z-index: 300;
-	position: fixed;
-	width: 100%;
-	top: 0;
-	ul.nav-bar {
+  #pull {
+    display: block;
+    text-align: right;
+    height: 66px;
+    padding-top: $space;
+  }
+  #main-nav {
+    li {
+      float: none;
+    }
+    a {
+      width: 100%;
+      text-align: center;
+    }
+    ul {
+      float: none;
+    }
+  }
+  .pull-toggle {
+    width: auto !important;
+  }
+  #nav-container {
+    height: 66px;
+    overflow: hidden;
+  }
+  #home {
+    background-attachment: scroll;
+    padding-top: 30%;
+  }
+  .team-member {
+    padding-right: $space;
+    margin-bottom: ($space) * 2;
+  }
+  .team-image-wrap {
+    overflow: hidden;
+  }
+  .team-hover {
+    width: 92%;
+  }
+  #portfolio-container {
+    margin-left: 7px;
+  }
+  .project-slideshow {
     height: auto;
-    margin: 0;
-    float: right;
-    list-style: none;
-	}
-	li {
-		float: left;
-    overflow: auto;
-    color: $grey-dark;
-    cursor: pointer;
-    border: none;
-    border-right: 1px solid $grey-light;
-    font-weight: bold;
-    line-height: 20px;
-		&:first-child {
-			border-left: 1px solid $grey-light;
-		}
-    &.active {
-      a {
-  			background-color: $grey-lighter;
-      }
+  }
+  .service {
+    border-right: none;
+    border-bottom: 3px solid $white;
+    margin-bottom: ($space) * 2;
+    padding-bottom: $space;
+    &:last-child {
+      border-bottom: none;
     }
   }
-  a {
-    color: $grey-dark;
-    padding: 8px 20px;
-    display: inline-block;
-    background-color: $grey-lightest;
-    &:hover {
-      background-color: $grey-lighter;
-		}
-	}
-	#nav-container {
-		width: 100%;
-    overflow: auto;
-    text-align: center;
-    -webkit-box-shadow: 0 0 3px 3px $black_30;
-    background-color: $grey-lightest;
-    border-bottom: 4px solid $primary;
-    box-shadow: 0 0 3px 3px $black_30;
-	}
-	#pull {
-		display: none;
-	}
-	#logo {
-		float: left;
-		font-weight: bold;
-		font-size: 1.7em;
-		padding: 10px;
-		margin-left: 10px;
-		margin-top: 5px;
-		a {
-			padding: 0;
-		}
-	}
-}
-	.overflow {
-		overflow: hidden;
-	}
-	#home {
-		border-bottom: 14px solid $primary;
-		padding-top: 17%;
-		padding-bottom: 0;
-		background: url('../images/TA-hero.jpg');
-		background-size: cover;
-		background-attachment: fixed;
-	}
-	#home-title {
-		height: 500px;
-		h1 {
-			font-size: 6em;
-			line-height: 0.8;
-		}
-    h4 {
-      color: $primary;
-    }
-    img.arrow-inline {
-      padding-right: $space;
-      vertical-align: middle;
-    }
-	}
-.rslides {
-	position: relative;
-	list-style: none;
-	overflow: hidden;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-	li {
-		-webkit-backface-visibility: hidden;
-		position: absolute;
-		display: none;
-		width: 100%;
-		left: 0;
-		top: 0;
-		&:first-child {
-			position: relative;
-			display: block;
-			float: left;
-		}
-	}
-	img {
-		display: block;
-		height: auto;
-		float: left;
-		width: 100%;
-		border: 0;
-	}
-}
-.page-callout {
-	margin-bottom: 38px;
-}
-#services-bar {
-	background-color: $primary;
-	padding: 20px;
-	overflow: hidden;
-	color: $white;
-	i {
-		font-size: 3.5em;
-		color: $white;
-	}
-}
-.service {
-	border-right: 3px solid;
-	&:last-child {
-		border-right: 0;
-	}
-}
-.testimonials {
-	padding-bottom: 8%;
-	padding-top: 8%;
-	background: url('../images/TA-hero-blur.jpg');
-	background-size: cover;
-	background-attachment: fixed;
-}
-.testimonial {
-	background-color: $grey-lightest-70;
-	padding: $space;
-	h4 {
-		font-style: italic;
-	}
-	i {
-		font-size: 5em;
-		display: inline-block;
-		padding-top: 19px;
-	}
-}
-.testimonial-triangle {
-	width: 0;
-	height: 0;
-	border-left: 40px solid transparent;
-	border-right: 0 solid transparent;
-	border-top: ($space) * 2 solid $grey-light-70;
-}
-.portfolio-overlay {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	display: none;
-	padding: 52px 10px 10px;
-	background-color: $primary-80;
-}
-#portfolio-container {
-	margin-bottom: 40px;
-}
-.isotope-item {
-	z-index: 2;
-	width: 302px;
-	height: 180px;
-	overflow: hidden;
-}
-#filters {
-	list-style: none;
-	overflow: hidden;
-	margin: 0;
-	display: inline-block;
-	li {
-		float: left;
-		margin-left: $space;
-		&:first-child {
-			margin-left: 0;
-		}
-		a {
-			font-weight: 800;
-			color: $grey-dark;
-			font-size: 17px;
-		}
-	}
-}
-.active-filter {
-	border-bottom: 3px solid $grey-dark;
-}
-.isotope {
-	@extend %extend_1;
-	-webkit-transition-property: height, width;
-	-moz-transition-property: height, width;
-	-ms-transition-property: height, width;
-	-o-transition-property: height, width;
-	//Instead of the line below you could use @includetransition-property($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10)
-	transition-property: height, width;
-	.isotope-item {
-		@extend %extend_1;
-		-webkit-transition-property: -webkit-transform, opacity;
-		-moz-transition-property: -moz-transform, opacity;
-		-ms-transition-property: -ms-transform, opacity;
-		-o-transition-property: -o-transform, opacity;
-		//Instead of the line below you could use @includetransition-property($property-1, $property-2, $property-3, $property-4, $property-5, $property-6, $property-7, $property-8, $property-9, $property-10)
-		transition-property: transform, opacity;
-		&.no-transition {
-			@extend %extend_2;
-		}
-	}
-	&.no-transition {
-		@extend %extend_2;
-		.isotope-item {
-			@extend %extend_2;
-		}
-	}
-}
-.project-slideshow {
-	height: 400px;
-	overflow: hidden;
-	border-bottom: 14px solid $primary;
-}
-.project-description {
-	h3 {
-		margin-bottom: 0;
-	}
-	h4 {
-		margin-top: 5px;
-	}
-}
-.project-details {
-	background-color: $primary;
-	padding: 10px;
-	margin-top: $space;
-	h5 {
-		margin-top: 5px;
-		margin-bottom: 0;
-	}
-}
-.project-triangle {
-	width: 0;
-	height: 0;
-	border-left: 40px solid transparent;
-	border-right: 0 solid transparent;
-	border-top: ($space) * 2 solid $primary-dirty;
-	margin-bottom: ($space) * 2;
-}
-.project-triangle-right {
-	width: 0;
-	height: 0;
-	border-right: 40px solid transparent;
-	border-left: 0 solid transparent;
-	border-top: ($space) * 2 solid $primary-dirty;
-	margin-bottom: ($space) * 2;
-}
-#clients {
-	padding-bottom: 8%;
-	padding-top: 8%;
-	background: url('http://placehold.it/1200x800');
-	background-size: cover;
-	background-attachment: fixed;
-	h2 {
-		margin-bottom: ($space) * 4;
-		margin-top: 0;
-	}
-	img {
-		width: 200px;
-		margin-bottom: 10px;
-		display: inline-block;
-	}
-}
-.skills {
-	ul {
-		// list-style: none;
-	}
-	li {
-		// height: ($space) * 2;
-		// background-color: $primary;
-		// margin-bottom: 20px;
-		// padding: 5px 0 0 5px;
-		h5 {
-			margin: 0;
-		}
-	}
-}
-.web-development {
-	width: 75%;
-}
-.graphic-design {
-	width: 95%;
-}
-.seo {
-	width: 65%;
-}
-.branding-identity {
-	width: 100%;
-}
-.our-team {
-	margin-bottom: 80px;
-	img {
-		height: 250px;
-		max-width: 200%;
-		position: relative;
-		top: 2px;
-	}
-}
-.team-member {
-	overflow: hidden;
-	p {
-		background-color: $grey-lighter;
-		padding: 10px 15px 20px;
-		margin-bottom: 0;
-	}
-}
-.team-image-wrap {
-	overflow: hidden;
-}
-.team-member-title {
-	background-color: $primary;
-	padding: 10px 0 10px 15px;
-	h5 {
-		margin: 5px 0 0;
-    small {
-      color: $white;
-      font-size: 70%;
-      vertical-align: middle;
-    }
-	}
-	h6 {
-		margin: 7px 0 5px;
-	}
-}
-.team-hover {
-	position: absolute;
-	top: 0;
-	width: 90.5%;
-	height: 254px;
-	background-color: $primary-80;
-	font-size: 4em;
-	display: none;
-	z-index: 200;
-	i {
-		margin-top: $space;
-		display: inline-block;
-	}
+  .full-bg {
+    background-attachment: scroll !important;
+  }
+  #bottom-social i {
+    font-size: 3em;
+  }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .full-bg {
+    background-attachment: scroll !important;
+  }
+  #portfolio-container {
+    margin-left: 65px;
+  }
+}
 
-
-#form-name {
-	height: 40px;
-	background-color: #eee;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-
-}
-#form-email {
-  height: 40px;
-  background-color: #eee;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-#form-msg {
-  height: ($space) * 9;
-  background-color: #eee;
-  border: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-#form-send {
-	height: ($space) * 9;
-	border: 4px solid $grey-dark;
-	color: $grey-dark;
-	font-size: 4em;
-	cursor: pointer;
-	&:hover {
-		border: 4px solid $grey;
-	}
-	h4 {
-		margin-top: 0;
-	}
-	i {
-		margin-top: $space;
-		display: inline-block;
-	}
-}
-#bottom-contact {
-	margin-bottom: 0 !important;
-}
-#google-map {
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	border-bottom: 14px solid $primary;
-	-webkit-box-shadow: 0 7px 12px 0 $black_50;
-	//Instead of the line below you could use @includebox-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
-	box-shadow: 0 7px 12px 0 $black_50;
-	width: 100%;
-}
-#bottom-social {
-	padding-bottom: 2%;
-	padding-top: 2%;
-	background: url('http://placehold.it/1200x800');
-	background-size: cover;
-	background-attachment: fixed;
-	margin-bottom: 0 !important;
-	h3 {
-		margin-top: 0;
-		margin-bottom: 25px;
-	}
-	i {
-		font-size: 3.5em;
-		margin-left: 35px;
-	}
-}
-.social-foundicon-twitter {
-	margin-left: 0 !important;
-}
-#details-error-wrap {
-	display: none;
-}
-@media only screen and (max-width : 480px) {
-	#home-title {
-		height: 450px;
-		h1 {
-			font-size: 4em;
-		}
-	}
-	#pull {
-		display: block;
-		text-align: right;
-		height: 66px;
-		padding-top: $space;
-	}
-	#main-nav {
-		li {
-			float: none;
-		}
-		a {
-			width: 100%;
-			text-align: center;
-		}
-		ul {
-			float: none;
-		}
-	}
-	.pull-toggle {
-		width: auto !important;
-	}
-	#nav-container {
-		height: 66px;
-		overflow: hidden;
-	}
-	#home {
-		background-attachment: scroll;
-		padding-top: 30%;
-	}
-	.team-member {
-		padding-right: $space;
-		margin-bottom: ($space) * 2;
-	}
-	.team-image-wrap {
-		overflow: hidden;
-	}
-	.team-hover {
-		width: 92%;
-	}
-	#portfolio-container {
-		margin-left: 7px;
-	}
-	.project-slideshow {
-		height: auto;
-	}
-	.service {
-		border-right: none;
-		border-bottom: 3px solid $white;
-		margin-bottom: ($space) * 2;
-		padding-bottom: $space;
-		&:last-child {
-			border-bottom: none;
-		}
-	}
-	.full-bg {
-		background-attachment: scroll !important;
-	}
-	#bottom-social i {
-		font-size: 3em;
-	}
-}
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	.full-bg {
-		background-attachment: scroll !important;
-	}
-	#portfolio-container {
-		margin-left: 65px;
-	}
-}
 .isotope-hidden.isotope-item {
-	z-index: 1;
+  z-index: 1;
 }

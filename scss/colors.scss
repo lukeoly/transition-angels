@@ -1,21 +1,23 @@
-// Site Colors
+// Site Colours
 
+// Greyscale
+$white:             #fff;
+$silver_light:      rgb(200,200,200);
+$grey-lightest-70:  rgba(221, 221, 221, 0.7);
+$grey-lightest:     #ddd;
+$grey-lighter:      #ccc;
+$grey-light-70:     rgba(187, 187, 187, 0.7);
+$grey-light:        #bbb;
+$grey:              #777;
+$grey-dark:         #222;
+$black_30:          rgba(0, 0, 0, 0.3);
+$black_50:          rgba(0, 0, 0, 0.5);
 
+// Primary Colour
+$primary:           #ed135d; // Pink
+$primary-80:        rgba($primary, 0.8);
+$primary-dirty:     desaturate(darken($primary, 3), 23);
 
-
-$silver_light:  rgb(200,200,200);
-
-
-$white: #fff;
-$grey-lightest: #ddd;
-$grey-lighter: #ccc;
-$grey-light: #bbb;
-$grey: #777;
-$grey-dark: #222;
-$black_30: rgba(0, 0, 0, 0.3);
-$black_50: rgba(0, 0, 0, 0.5);
-$primary: #ed135d; // Pink
-$grey-lightest-70: rgba(221, 221, 221, 0.7);
-$grey-light-70: rgba(187, 187, 187, 0.7);
-$primary-80: rgba($primary, 0.8);
-$primary-dirty: desaturate(darken($primary, 3), 23);
+// Colour classes
+.text-white {         color: $white; }
+.highlight-color {    color: $primary; }
