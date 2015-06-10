@@ -43,7 +43,8 @@
     text-align: center;
     -webkit-box-shadow: 0 0 3px 3px $black_30;
     background-color: $grey-lightest;
-    border-bottom: 4px solid $primary;
+    @include primary-border-gradient;
+    border-bottom: 4px solid;
     box-shadow: 0 0 3px 3px $black_30;
   }
   #pull {

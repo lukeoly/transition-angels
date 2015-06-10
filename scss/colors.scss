@@ -16,8 +16,27 @@ $black_50:          rgba(0, 0, 0, 0.5);
 // Primary Colour
 $primary:           #ed135d; // Pink
 $primary-80:        rgba($primary, 0.8);
-$primary-dirty:     desaturate(darken($primary, 3), 23);
+$primary-dirty:     #8e0b43;
+
+@mixin primary-border-gradient {
+    border: 0 solid;
+    -moz-border-image: -moz-linear-gradient(left, $primary-dirty 0%, $primary 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, $primary-dirty 0%, $primary-dirty 100%);
+    border-image: linear-gradient(to right, $primary-dirty 0%, $primary 100%);
+    border-image-slice: 1;
+
+}
 
 // Colour classes
 .text-white {         color: $white; }
 .highlight-color {    color: $primary; }
+
+
+
+
+.primary-text-gradient {
+  color: $primary; /*non-webkit fallback*/
+  background: -webkit-linear-gradient(135deg, $primary, $primary-dirty);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

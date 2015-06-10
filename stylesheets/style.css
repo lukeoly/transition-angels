@@ -1711,39 +1711,52 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 
 .social-foundicon-wordpress:before { content: "\f01d"; }
 
-h1, h2, h3, h4, h5, h6 { font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
-body { font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
-.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -ms-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; }
-
-.isotope .isotope-item.no-transition, .isotope.no-transition, .isotope.no-transition .isotope-item { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; background-color: #dddddd; }
-
-body { font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
-
-h5 a { color: inherit; }
-
-.thick-hr { border: 6px solid white; position: relative; }
-
-.text-book { font-weight: 300; }
-
-.text-xbold { font-weight: 800; }
-
-.text-bold { font-weight: 700; }
-
 .text-white { color: white; }
 
 .highlight-color { color: #ed135d; }
 
-section { margin-bottom: 40px !important; }
+.primary-text-gradient { color: #ed135d; /*non-webkit fallback*/ background: -webkit-linear-gradient(135deg, #ed135d, #8e0b43); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-.divider { border-top: 14px solid #ed135d; border-bottom: 14px solid #ed135d; }
+.thick-hr { border: 6px solid white; position: relative; }
+
+section { margin-bottom: 140px !important; }
+
+.divider { border: 0 solid; -moz-border-image: -moz-linear-gradient(left, #8e0b43 0%, #ed135d 100%); -webkit-border-image: -webkit-linear-gradient(left, #8e0b43 0%, #8e0b43 100%); border-image: linear-gradient(to right, #8e0b43 0%, #ed135d 100%); border-image-slice: 1; border-top: 14px solid; border-bottom: 14px solid; }
+
+.overflow { overflow: hidden; }
+
+.isotope, .isotope .isotope-item { -webkit-transition-duration: 0.8s; -moz-transition-duration: 0.8s; -ms-transition-duration: 0.8s; -o-transition-duration: 0.8s; transition-duration: 0.8s; }
+
+.isotope .isotope-item.no-transition, .isotope.no-transition, .isotope.no-transition .isotope-item { -webkit-transition-duration: 0s; -moz-transition-duration: 0s; -ms-transition-duration: 0s; -o-transition-duration: 0s; transition-duration: 0s; background-color: #dddddd; }
 
 .hollow-button { padding: 15px; border: 4px solid white; cursor: pointer; }
 
 .small-hollow-button { padding: 8px; border: 4px solid white; cursor: pointer; display: inline-block; }
 
 .triangle-right { width: 0; height: 0; border-left: 40px solid transparent; border-right: 0 solid transparent; border-top: 30px solid #bbbbbb; }
+
+#form-name { height: 40px; background-color: #eee; border: none; -webkit-box-shadow: none; box-shadow: none; }
+
+#form-email { height: 40px; background-color: #eee; border: none; -webkit-box-shadow: none; box-shadow: none; }
+
+#form-msg { height: 135px; background-color: #eee; border: none; -webkit-box-shadow: none; box-shadow: none; }
+
+#form-send { height: 135px; border: 4px solid #222222; color: #222222; font-size: 4em; cursor: pointer; }
+#form-send:hover { border: 4px solid #777777; }
+#form-send h4 { margin-top: 0; }
+#form-send i { margin-top: 15px; display: inline-block; }
+
+#bottom-contact { margin-bottom: 0 !important; }
+
+#google-map { border-top: none; border-right: none; border-left: none; border-bottom: 14px solid #ed135d; -webkit-box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.5); width: 100%; }
+
+#bottom-social { padding-bottom: 2%; padding-top: 2%; background: url("../images/TA-hero-blur.jpg"); background-size: cover; background-attachment: fixed; margin-bottom: 0 !important; }
+#bottom-social h3 { margin-top: 0; margin-bottom: 25px; }
+#bottom-social i { font-size: 3.5em; margin-left: 35px; }
+
+.social-foundicon-twitter { margin-left: 0 !important; }
+
+#details-error-wrap { display: none; }
 
 #main-nav { margin-bottom: 100px; z-index: 300; position: fixed; width: 100%; top: 0; }
 #main-nav ul.nav-bar { height: auto; margin: 0; float: right; list-style: none; }
@@ -1752,14 +1765,12 @@ section { margin-bottom: 40px !important; }
 #main-nav li.active a { background-color: #cccccc; }
 #main-nav a { color: #222222; padding: 8px 20px; display: inline-block; background-color: #dddddd; }
 #main-nav a:hover { background-color: #cccccc; }
-#main-nav #nav-container { width: 100%; overflow: auto; text-align: center; -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); background-color: #dddddd; border-bottom: 4px solid #ed135d; box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); }
+#main-nav #nav-container { width: 100%; overflow: auto; text-align: center; -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); background-color: #dddddd; border: 0 solid; -moz-border-image: -moz-linear-gradient(left, #8e0b43 0%, #ed135d 100%); -webkit-border-image: -webkit-linear-gradient(left, #8e0b43 0%, #8e0b43 100%); border-image: linear-gradient(to right, #8e0b43 0%, #ed135d 100%); border-image-slice: 1; border-bottom: 4px solid; box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); }
 #main-nav #pull { display: none; }
 #main-nav #logo { float: left; font-weight: bold; font-size: 1.7em; padding: 10px; margin-left: 10px; margin-top: 5px; }
 #main-nav #logo a { padding: 0; }
 
-.overflow { overflow: hidden; }
-
-#home { border-bottom: 14px solid #ed135d; padding-top: 17%; padding-bottom: 0; background: url("../images/TA-hero.jpg"); background-size: cover; background-attachment: fixed; }
+#home { border: 0 solid; -moz-border-image: -moz-linear-gradient(left, #8e0b43 0%, #ed135d 100%); -webkit-border-image: -webkit-linear-gradient(left, #8e0b43 0%, #8e0b43 100%); border-image: linear-gradient(to right, #8e0b43 0%, #ed135d 100%); border-image-slice: 1; border-bottom-width: 14px; padding-top: 17%; padding-bottom: 0; background: url("../images/TA-hero.jpg"); background-size: cover; background-attachment: fixed; }
 
 #home-title { height: 500px; }
 #home-title h1 { font-size: 6em; line-height: 0.8; }
@@ -1811,23 +1822,13 @@ section { margin-bottom: 40px !important; }
 .project-details { background-color: #ed135d; padding: 10px; margin-top: 15px; }
 .project-details h5 { margin-top: 5px; margin-bottom: 0; }
 
-.project-triangle { width: 0; height: 0; border-left: 40px solid transparent; border-right: 0 solid transparent; border-top: 30px solid #c42d60; margin-bottom: 30px; }
+.project-triangle { width: 0; height: 0; border-left: 40px solid transparent; border-right: 0 solid transparent; border-top: 30px solid #8e0b43; margin-bottom: 30px; }
 
-.project-triangle-right { width: 0; height: 0; border-right: 40px solid transparent; border-left: 0 solid transparent; border-top: 30px solid #c42d60; margin-bottom: 30px; }
+.project-triangle-right { width: 0; height: 0; border-right: 40px solid transparent; border-left: 0 solid transparent; border-top: 30px solid #8e0b43; margin-bottom: 30px; }
 
-#clients { padding-bottom: 8%; padding-top: 8%; background: url("http://placehold.it/1200x800"); background-size: cover; background-attachment: fixed; }
+#clients { padding-bottom: 8%; padding-top: 8%; background: url("../images/TA-hero-blur.jpg"); background-size: cover; background-attachment: fixed; }
 #clients h2 { margin-bottom: 60px; margin-top: 0; }
 #clients img { width: 200px; margin-bottom: 10px; display: inline-block; }
-
-.skills li h5 { margin: 0; }
-
-.web-development { width: 75%; }
-
-.graphic-design { width: 95%; }
-
-.seo { width: 65%; }
-
-.branding-identity { width: 100%; }
 
 .our-team { margin-bottom: 80px; }
 .our-team img { height: 250px; max-width: 200%; position: relative; top: 2px; }
@@ -1845,28 +1846,16 @@ section { margin-bottom: 40px !important; }
 .team-hover { position: absolute; top: 0; width: 90.5%; height: 254px; background-color: rgba(237, 19, 93, 0.8); font-size: 4em; display: none; z-index: 200; }
 .team-hover i { margin-top: 15px; display: inline-block; }
 
-#form-name { height: 40px; background-color: #eee; border: none; -webkit-box-shadow: none; box-shadow: none; }
+body { font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
 
-#form-email { height: 40px; background-color: #eee; border: none; -webkit-box-shadow: none; box-shadow: none; }
+h1, h2, h3, h4, h5, h6 { font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: inherit; }
 
-#form-msg { height: 135px; background-color: #eee; border: none; -webkit-box-shadow: none; box-shadow: none; }
+.text-book { font-weight: 300; }
 
-#form-send { height: 135px; border: 4px solid #222222; color: #222222; font-size: 4em; cursor: pointer; }
-#form-send:hover { border: 4px solid #777777; }
-#form-send h4 { margin-top: 0; }
-#form-send i { margin-top: 15px; display: inline-block; }
+.text-xbold { font-weight: 800; }
 
-#bottom-contact { margin-bottom: 0 !important; }
-
-#google-map { border-top: none; border-right: none; border-left: none; border-bottom: 14px solid #ed135d; -webkit-box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.5); box-shadow: 0 7px 12px 0 rgba(0, 0, 0, 0.5); width: 100%; }
-
-#bottom-social { padding-bottom: 2%; padding-top: 2%; background: url("http://placehold.it/1200x800"); background-size: cover; background-attachment: fixed; margin-bottom: 0 !important; }
-#bottom-social h3 { margin-top: 0; margin-bottom: 25px; }
-#bottom-social i { font-size: 3.5em; margin-left: 35px; }
-
-.social-foundicon-twitter { margin-left: 0 !important; }
-
-#details-error-wrap { display: none; }
+.text-bold { font-weight: 700; }
 
 @media only screen and (max-width: 480px) { #home-title { height: 450px; }
   #home-title h1 { font-size: 4em; }

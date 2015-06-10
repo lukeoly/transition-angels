@@ -7,12 +7,13 @@ $space: 15px;
 }
 
 section {
-  margin-bottom: 40px !important;
+  margin-bottom: 140px !important;
 }
 
 .divider {
-  border-top: 14px solid $primary;
-  border-bottom: 14px solid $primary;
+  @include primary-border-gradient;
+  border-top: 14px solid;
+  border-bottom: 14px solid;
 }
 
 .overflow {

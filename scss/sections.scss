@@ -1,5 +1,6 @@
   #home {
-    border-bottom: 14px solid $primary;
+    @include primary-border-gradient;
+    border-bottom-width: 14px;
     padding-top: 17%;
     padding-bottom: 0;
     background: url('../images/TA-hero.jpg');
