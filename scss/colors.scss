@@ -18,14 +18,6 @@ $primary:           #ed135d; // Pink
 $primary-80:        rgba($primary, 0.8);
 $primary-dirty:     #8e0b43;
 
-@mixin primary-border-gradient {
-    border: 0 solid;
-    -moz-border-image: -moz-linear-gradient(left, $primary-dirty 0%, $primary 100%);
-    -webkit-border-image: -webkit-linear-gradient(left, $primary-dirty 0%, $primary-dirty 100%);
-    border-image: linear-gradient(to right, $primary-dirty 0%, $primary 100%);
-    border-image-slice: 1;
-
-}
 
 // Colour classes
 .text-white {         color: $white; }
@@ -33,6 +25,17 @@ $primary-dirty:     #8e0b43;
 
 
 
+@mixin primary-border-gradient {
+    border: 0 solid;
+    -moz-border-image: -moz-linear-gradient(left, $primary-dirty 0%, $primary 100%);
+    -webkit-border-image: -webkit-linear-gradient(left, $primary-dirty 0%, $primary-dirty 100%);
+    border-image: linear-gradient(to right, $primary-dirty 0%, $primary 100%);
+    border-image-slice: 1;
+}
+
+.primary-background-gradient {
+    background: -webkit-linear-gradient(135deg, $primary, $primary-dirty);
+}
 
 .primary-text-gradient {
   color: $primary; /*non-webkit fallback*/
