@@ -1719,6 +1719,10 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 
 .primary-text-gradient { color: #ed135d; /*non-webkit fallback*/ background: -webkit-linear-gradient(135deg, #ed135d, #8e0b43); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
+/* Very large screens */
+/* Medium screens */
+/* Small screens */
+/* Touch Detection */
 .thick-hr { border: 6px solid white; position: relative; }
 
 section { margin-bottom: 140px !important; }
@@ -1766,14 +1770,15 @@ section { margin-bottom: 140px !important; }
 #main-nav ul.nav-bar { height: auto; margin: 0; float: right; list-style: none; }
 #main-nav li { float: left; overflow: auto; color: #222222; cursor: pointer; border: none; line-height: 20px; }
 #main-nav li.active a { font-weight: bold; color: #ed135d; }
-#main-nav a { color: #222222; padding: 20px; display: inline-block; text-transform: uppercase; background-color: #dddddd; }
+#main-nav a { padding: 30px; display: inline-block; text-transform: uppercase; font-size: 18px; background-color: #dddddd; color: #222222; }
 #main-nav a:hover { background-color: #cccccc; }
-#main-nav #nav-container { width: 100%; height: 60px; overflow: visible; text-align: center; -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); background-color: #dddddd; box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); }
+#main-nav #nav-container { width: 100%; height: 80px; overflow: visible; text-align: center; -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); background-color: #dddddd; box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); }
 #main-nav #pull { display: none; }
 #main-nav #logo { float: left; font-weight: bold; font-size: 1.7em; padding: 10px; margin-left: 20px; background-color: #ed135d; }
 #main-nav #logo a { padding: 0; width: 200px; height: 80px; background: url(../images/logo-white.svg) 0 0 no-repeat; }
 
-#home { border: 0 solid; -moz-border-image: -moz-linear-gradient(left, #8e0b43 0%, #ed135d 100%); -webkit-border-image: -webkit-linear-gradient(left, #8e0b43 0%, #8e0b43 100%); border-image: linear-gradient(to right, #8e0b43 0%, #ed135d 100%); border-image-slice: 1; border-bottom-width: 14px; padding-top: 17%; padding-bottom: 0; background: url("../images/TA-hero.jpg"); background-size: cover; background-attachment: fixed; }
+#home { border: 0 solid; -moz-border-image: -moz-linear-gradient(left, #8e0b43 0%, #ed135d 100%); -webkit-border-image: -webkit-linear-gradient(left, #8e0b43 0%, #8e0b43 100%); border-image: linear-gradient(to right, #8e0b43 0%, #ed135d 100%); border-image-slice: 1; border-bottom-width: 14px; padding-top: 17%; padding-bottom: 0; background: url("../images/TA-hero.jpg"); background-size: 100%; }
+@media (min-width: 768px) { #home { background-attachment: fixed; background-size: cover; } }
 
 #home-title { height: 500px; }
 #home-title h1 { font-size: 6em; line-height: 0.8; }

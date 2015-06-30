@@ -1,0 +1,29 @@
+// Breakpoint variables
+
+$screen-mobile:   480px;
+$screen-small:    768px;
+$screen-medium:   768px;
+$screen-large:    768px;
+
+// Max values are loaded after min variables are defined
+$screen-mobile-max: ($screen-small - 1) !default;
+$screen-small-max:  ($screen-medium - 1) !default;
+$screen-medium-max: ($screen-large - 1) !default;
+
+
+// Example usage
+
+/* Very large screens */
+@media (min-width: $screen-large) {}
+
+/* Medium screens */
+@media (min-width: $screen-medium) { }
+
+/* Small screens */
+@media (min-width: $screen-small) { }
+
+
+/* Touch Detection */
+.touch .your-class {  }
+
+
