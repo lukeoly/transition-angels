@@ -33,6 +33,11 @@ $primary-dirty:     #8e0b43;
     border-image-slice: 1;
 }
 
+.primary-border-gradient {
+  @include primary-border-gradient ();
+  border-width: 1px;
+}
+
 .primary-background-gradient {
     background: -webkit-linear-gradient(135deg, $primary, $primary-dirty);
 }

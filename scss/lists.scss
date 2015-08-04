@@ -1,0 +1,17 @@
+// Lists
+
+.arrow-list {
+  list-style: none;
+  text-align: center;
+  li {
+    display: block;
+    margin: 0 auto;
+    padding-left: 20px;
+    background: url('../images/arrow-outline.svg') left center no-repeat;
+
+  }
+}
+.list-unstyled {
+  list-style: none;
+  vertical-align: middle;
+}

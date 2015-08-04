@@ -1,0 +1,33 @@
+// Custom icons
+
+.icon-quote-before {
+  width: 60px;
+  height: 60px;
+  display: block;
+  background: transparent url('../images/quote.svg') center center no-repeat;
+  -webkit-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+}
+
+.icon-quote-after {
+  @extend .icon-quote-before;
+  float: right;
+  -webkit-transform: rotate(180deg);
+     -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+       -o-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.arrow-outline {
+  width: .6em;
+  height: .6em;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  background: transparent url('../images/arrow-outline.svg') center center no-repeat;
+  -webkit-background-size: contain;
+       -o-background-size: contain;
+          background-size: contain;
+}

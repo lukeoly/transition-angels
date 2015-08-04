@@ -1,5 +1,11 @@
+section {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+
 #home {
-  @include primary-border-gradient;
+  // @include primary-border-gradient;
   border-bottom-width: 14px;
   padding-top: 17%;
   padding-bottom: 0;
@@ -8,6 +14,15 @@
   @media (min-width: $screen-large) {
     background-attachment: fixed;
     background-size: cover;
+  }
+  .home-tag {
+    @extend .primary-background-gradient;
+    padding: $space 0;
+    vertical-align: middle;
+    p {
+      margin-bottom: 0;
+      vertical-align: middle;
+    }
   }
 }
 
@@ -60,6 +75,7 @@
 }
 
 #services {
+  background-color: $grey-lightest-70;
   p {
     font-size: 23px;
   }
@@ -74,12 +90,12 @@
 
 #about-us {
   p {
-    font-size: 23px;
+    font-size: 17px;
   }
 }
 
 .testimonials {
-  min-height: 845px;
+  min-height: 1040px;
   padding-bottom: 8%;
   padding-top: 8%;
   background: url('../images/testimonials-bg.jpg');
@@ -98,6 +114,10 @@
     border-left: 40px solid transparent;
     border-right: 0 solid transparent;
     border-top: ($space) * 2 solid $grey-light-70;
+  }
+  i.foundicon-quote {
+    color: #FFF;
+    font-size: 60px;
   }
 }
 

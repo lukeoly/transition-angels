@@ -1,0 +1,4 @@
+.arrow-list { list-style: none; text-align: center; }
+.arrow-list li { padding-left: 20px; background-image: url("images/arrow-outline.svg") left center no-repeat; }
+
+/*# sourceMappingURL=lists.css.map */

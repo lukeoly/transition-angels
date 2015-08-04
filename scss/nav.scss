@@ -49,17 +49,14 @@
   }
   #logo {
     float: left;
-    font-weight: bold;
-    font-size: 1.7em;
-    padding: 10px;
     margin-left: 20px;
-    background-color: $primary;
+    @extend .mask;
     a {
       padding: 0;
-      width: 200px;
-      height: 80px;
-      background:  url(../images/logo-white.svg) 0 0 no-repeat;
-
+      width: 360px;
+      height: 200px;
+      background:  url(../images/logo.svg) center top no-repeat;
+      @extend .mask;
     }
   }
 }
