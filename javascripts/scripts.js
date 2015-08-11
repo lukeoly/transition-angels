@@ -55,14 +55,14 @@ $(document).ready(function() {
 
 		event.preventDefault();
 
-		if($('#nav-container').css('height') != '66px'){
-			$('#nav-container').animate({height:'66px'}, 500);
-			$("#pull").html('<a class="right pull-toggle" href="#"><i class="foundicon-down-arrow"></i></a>');
+		if($('#nav-container').css('height') != '80px'){
+			$('#nav-container').animate({height:'80px'}, 500);
+			// $("#pull").html('<a class="right pull-toggle" href="#"><i class="foundicon-down-arrow"></i></a>');
 
 
 		}else{
 			$('#nav-container').css('height', 'auto');
-			$("#pull").html('<a class="right pull-toggle" href="#"><i class="foundicon-up-arrow"></i></a>');
+			// $("#pull").html('<a class="right pull-toggle" href="#"><i class="foundicon-up-arrow"></i></a>');
 		}
 
 	});
@@ -72,8 +72,8 @@ $(document).ready(function() {
 		event.preventDefault();
 
 		if($("#pull").is(":visible")){
-			$('#nav-container').animate({height:'66px'}, 500);
-			$("#pull").html('<a class="right pull-toggle" href="#"><i class="foundicon-down-arrow"></i></a>');
+			$('#nav-container').animate({height:'80px'}, 500);
+			// $("#pull").html('<a class="right pull-toggle" href="#"><i class="foundicon-down-arrow"></i></a>');
 		}
 	});
 

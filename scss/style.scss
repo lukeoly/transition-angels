@@ -20,18 +20,7 @@
 
 // Media Queries
 @media only screen and (max-width: 480px) {
-  #home-title {
-    height: 450px;
-    h1 {
-      font-size: 4em;
-    }
-  }
-  #pull {
-    display: block;
-    text-align: right;
-    height: 66px;
-    padding-top: $space;
-  }
+
   #main-nav {
     li {
       float: none;

@@ -36,3 +36,71 @@ $space: 15px;
 .margin-bottom-3    { margin-bottom: $space * 3; }
 .margin-bottom-4    { margin-bottom: $space * 4; }
 .margin-bottom-5    { margin-bottom: $space * 5; }
+
+// Mobile screens only
+@media (max-width: $screen-small) {
+  .mobile-no-margin-top      { margin-top: 0; }
+  .mobile-margin-top-1       { margin-top: $space; }
+  .mobile-margin-top-2       { margin-top: $space * 2; }
+  .mobile-margin-top-3       { margin-top: $space * 3; }
+  .mobile-margin-top-4       { margin-top: $space * 4; }
+  .mobile-margin-top-5       { margin-top: $space * 5; }
+
+  .mobile-no-margin-bottom   { margin-bottom: 0; }
+  .mobile-margin-bottom-1    { margin-bottom: $space; }
+  .mobile-margin-bottom-2    { margin-bottom: $space * 2; }
+  .mobile-margin-bottom-3    { margin-bottom: $space * 3; }
+  .mobile-margin-bottom-4    { margin-bottom: $space * 4; }
+  .mobile-margin-bottom-5    { margin-bottom: $space * 5; }
+}
+
+// Small screens and up
+@media (min-width: $screen-small) {
+  .small-no-margin-top      { margin-top: 0; }
+  .small-margin-top-1       { margin-top: $space; }
+  .small-margin-top-2       { margin-top: $space * 2; }
+  .small-margin-top-3       { margin-top: $space * 3; }
+  .small-margin-top-4       { margin-top: $space * 4; }
+  .small-margin-top-5       { margin-top: $space * 5; }
+
+  .small-no-margin-bottom   { margin-bottom: 0; }
+  .small-margin-bottom-1    { margin-bottom: $space; }
+  .small-margin-bottom-2    { margin-bottom: $space * 2; }
+  .small-margin-bottom-3    { margin-bottom: $space * 3; }
+  .small-margin-bottom-4    { margin-bottom: $space * 4; }
+  .small-margin-bottom-5    { margin-bottom: $space * 5; }
+}
+
+// Medium screens and up
+@media (min-width: $screen-medium) {
+  .medium-no-margin-top      { margin-top: 0; }
+  .medium-margin-top-1       { margin-top: $space; }
+  .medium-margin-top-2       { margin-top: $space * 2; }
+  .medium-margin-top-3       { margin-top: $space * 3; }
+  .medium-margin-top-4       { margin-top: $space * 4; }
+  .medium-margin-top-5       { margin-top: $space * 5; }
+
+  .medium-no-margin-bottom   { margin-bottom: 0; }
+  .medium-margin-bottom-1    { margin-bottom: $space; }
+  .medium-margin-bottom-2    { margin-bottom: $space * 2; }
+  .medium-margin-bottom-3    { margin-bottom: $space * 3; }
+  .medium-margin-bottom-4    { margin-bottom: $space * 4; }
+  .medium-margin-bottom-5    { margin-bottom: $space * 5; }
+}
+
+// large screens only
+@media (min-width: $screen-large) {
+  .large-no-margin-top      { margin-top: 0; }
+  .large-margin-top-1       { margin-top: $space; }
+  .large-margin-top-2       { margin-top: $space * 2; }
+  .large-margin-top-3       { margin-top: $space * 3; }
+  .large-margin-top-4       { margin-top: $space * 4; }
+  .large-margin-top-5       { margin-top: $space * 5; }
+
+  .large-no-margin-bottom   { margin-bottom: 0; }
+  .large-margin-bottom-1    { margin-bottom: $space; }
+  .large-margin-bottom-2    { margin-bottom: $space * 2; }
+  .large-margin-bottom-3    { margin-bottom: $space * 3; }
+  .large-margin-bottom-4    { margin-bottom: $space * 4; }
+  .large-margin-bottom-5    { margin-bottom: $space * 5; }
+}

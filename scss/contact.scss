@@ -44,36 +44,36 @@
   margin-bottom: 0 !important;
 }
 
-#google-map {
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  border-bottom: 14px solid $primary;
-  -webkit-box-shadow: 0 7px 12px 0 $black_50;
-  box-shadow: 0 7px 12px 0 $black_50;
-  width: 100%;
-}
+// #google-map {
+//   border-top: none;
+//   border-right: none;
+//   border-left: none;
+//   border-bottom: 14px solid $primary;
+//   -webkit-box-shadow: 0 7px 12px 0 $black_50;
+//   box-shadow: 0 7px 12px 0 $black_50;
+//   width: 100%;
+// }
 
-#bottom-social {
-  padding-bottom: 2%;
-  padding-top: 2%;
-  background: url('../images/TA-hero-blur.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  margin-bottom: 0 !important;
-  h3 {
-    margin-top: 0;
-    margin-bottom: 25px;
-  }
-  i {
-    font-size: 3.5em;
-    margin-left: 35px;
-  }
-}
+// #bottom-social {
+//   padding-bottom: 2%;
+//   padding-top: 2%;
+//   background: url('../images/TA-hero-blur.jpg');
+//   background-size: cover;
+//   background-attachment: fixed;
+//   margin-bottom: 0 !important;
+//   h3 {
+//     margin-top: 0;
+//     margin-bottom: 25px;
+//   }
+//   i {
+//     font-size: 3.5em;
+//     margin-left: 35px;
+//   }
+// }
 
-.social-foundicon-twitter {
-  margin-left: 0 !important;
-}
+// .social-foundicon-twitter {
+//   margin-left: 0 !important;
+// }
 
 #details-error-wrap {
   display: none;

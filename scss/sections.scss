@@ -1,6 +1,18 @@
 section {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media (min-width: $screen-small) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media (min-width: $screen-medium) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media (min-width: $screen-large) {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
 }
 
 
@@ -9,8 +21,8 @@ section {
   border-bottom-width: 14px;
   padding-top: 17%;
   padding-bottom: 0;
-  background: url('../images/TA-hero.jpg');
-  background-size: 100%;
+  background: transparent url('../images/TA-hero.jpg') center bottom no-repeat;
+  background-size: auto 100%;
   @media (min-width: $screen-large) {
     background-attachment: fixed;
     background-size: cover;
@@ -27,7 +39,16 @@ section {
 }
 
 #home-title {
-  height: 500px;
+  height: 200px;
+  @media (min-width: $screen-small) {
+    height: 280px;
+  }
+  @media (min-width: $screen-medium) {
+    height: 300px;
+  }
+  @media (min-width: $screen-large) {
+    height: 500px;
+  }
   h1 {
     font-size: 6em;
     line-height: 0.8;
@@ -95,14 +116,22 @@ section {
 }
 
 .testimonials {
-  min-height: 1040px;
+  min-height: 820px;
   padding-bottom: 8%;
   padding-top: 8%;
   background: url('../images/testimonials-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
+  @media (min-width: $screen-small) {
+    min-height: 1085px;
+  }
+  @media (min-width: $screen-medium) {
+    min-height: 1040px;
+  }
   p {
-    font-size: 23px;
+    @media (min-width: $screen-small) {
+      font-size: 23px;
+    }
   }
   .testimonial {
     background-color: $grey-lightest-70;
@@ -245,15 +274,15 @@ section {
   }
 }
 
-.project-details {
-  background-color: $primary;
-  padding: 10px;
-  margin-top: $space;
-  h5 {
-    margin-top: 5px;
-    margin-bottom: 0;
-  }
-}
+// .project-details {
+//   background-color: $primary;
+//   padding: 10px;
+//   margin-top: $space;
+//   h5 {
+//     margin-top: 5px;
+//     margin-bottom: 0;
+//   }
+// }
 
 .project-triangle {
   width: 0;
@@ -273,73 +302,73 @@ section {
   margin-bottom: ($space) * 2;
 }
 
-#clients {
-  padding-bottom: 8%;
-  padding-top: 8%;
-  background: url('../images/TA-hero-blur.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  h2 {
-    margin-bottom: ($space) * 4;
-    margin-top: 0;
-  }
-  img {
-    width: 200px;
-    margin-bottom: 10px;
-    display: inline-block;
-  }
-}
+// #clients {
+//   padding-bottom: 8%;
+//   padding-top: 8%;
+//   background: url('../images/TA-hero-blur.jpg');
+//   background-size: cover;
+//   background-attachment: fixed;
+//   h2 {
+//     margin-bottom: ($space) * 4;
+//     margin-top: 0;
+//   }
+//   img {
+//     width: 200px;
+//     margin-bottom: 10px;
+//     display: inline-block;
+//   }
+// }
 
-.our-team {
-  margin-bottom: 80px;
-  img {
-    height: 250px;
-    max-width: 200%;
-    position: relative;
-    top: 2px;
-  }
-}
+// .our-team {
+//   margin-bottom: 80px;
+//   img {
+//     height: 250px;
+//     max-width: 200%;
+//     position: relative;
+//     top: 2px;
+//   }
+// }
 
-.team-member {
-  overflow: hidden;
-  p {
-    background-color: $grey-lighter;
-    padding: 10px 15px 20px;
-    margin-bottom: 0;
-  }
-}
+// .team-member {
+//   overflow: hidden;
+//   p {
+//     background-color: $grey-lighter;
+//     padding: 10px 15px 20px;
+//     margin-bottom: 0;
+//   }
+// }
 
-.team-image-wrap {
-  overflow: hidden;
-}
+// .team-image-wrap {
+//   overflow: hidden;
+// }
 
-.team-member-title {
-  background-color: $primary;
-  padding: 10px 0 10px 15px;
-  h5 {
-    margin: 5px 0 0;
-    small {
-      color: $white;
-      font-size: 70%;
-      vertical-align: middle;
-    }
-  }
-  h6 {
-    margin: 7px 0 5px;
-  }
-}
+// .team-member-title {
+//   background-color: $primary;
+//   padding: 10px 0 10px 15px;
+//   h5 {
+//     margin: 5px 0 0;
+//     small {
+//       color: $white;
+//       font-size: 70%;
+//       vertical-align: middle;
+//     }
+//   }
+//   h6 {
+//     margin: 7px 0 5px;
+//   }
+// }
 
-.team-hover {
-  position: absolute;
-  top: 0;
-  width: 90.5%;
-  height: 254px;
-  background-color: $primary-80;
-  font-size: 4em;
-  display: none;
-  z-index: 200;
-  i {
-    margin-top: $space;
-    display: inline-block;
-  }
-}
+// .team-hover {
+//   position: absolute;
+//   top: 0;
+//   width: 90.5%;
+//   height: 254px;
+//   background-color: $primary-80;
+//   font-size: 4em;
+//   display: none;
+//   z-index: 200;
+//   i {
+//     margin-top: $space;
+//     display: inline-block;
+//   }
+// }

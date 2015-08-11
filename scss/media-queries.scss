@@ -2,8 +2,8 @@
 
 $screen-mobile:   480px;
 $screen-small:    768px;
-$screen-medium:   768px;
-$screen-large:    768px;
+$screen-medium:   992px;
+$screen-large:    1170px;
 
 // Max values are loaded after min variables are defined
 $screen-mobile-max: ($screen-small - 1) !default;
