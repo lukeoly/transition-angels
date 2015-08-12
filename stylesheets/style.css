@@ -1847,13 +1847,15 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
 @media (min-width: 992px) { #main-nav a { display: inline-block; } }
 @media (min-width: 1170px) { #main-nav a { padding: 30px; } }
 #main-nav a:hover { background-color: #cccccc; }
-#main-nav #nav-container { width: 100%; height: 80px; overflow: hidden; text-align: center; -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); background-color: #dddddd; box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); }
-@media (min-width: 992px) { #main-nav #nav-container { overflow: visible; height: auto; } }
-#main-nav #nav-container .nav-hamburger { display: block; width: 30px; height: 30px; background: transparent url('data:image/svg+xml;charset=UTF-8,<svg height="12px" version="1.1" viewBox="0 0 22 12" width="22px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs><path d="M0.500836134,0 C0.224231975,0 0,0.214035034 0,0.504684448 L0,1.49531555 C0,1.77404508 0.217741728,2 0.500836134,2 L21.4991639,2 C21.775768,2 22,1.78596497 22,1.49531555 L22,0.504684448 C22,0.225954924 21.7822583,0 21.4991639,0 L0.500836134,0 Z M0.500836134,5 C0.224231975,5 0,5.21403503 0,5.50468445 L0,6.49531555 C0,6.77404508 0.217741728,7 0.500836134,7 L21.4991639,7 C21.775768,7 22,6.78596497 22,6.49531555 L22,5.50468445 C22,5.22595492 21.7822583,5 21.4991639,5 L0.500836134,5 Z M0.500836134,10 C0.224231975,10 0,10.214035 0,10.5046844 L0,11.4953156 C0,11.7740451 0.217741728,12 0.500836134,12 L21.4991639,12 C21.775768,12 22,11.785965 22,11.4953156 L22,10.5046844 C22,10.2259549 21.7822583,10 21.4991639,10 L0.500836134,10 Z" id="path-1"/></defs><g fill="none" fill-rule="evenodd" id="miu" stroke="none" stroke-width="1"><g id="nav-hamburger"><use fill="#ed135d" fill-rule="evenodd" xlink:href="#path-1"/><use fill="none" xlink:href="#path-1"/></g></g></svg>') 0 0 no-repeat; background-size: cover; }
+#main-nav #nav-container { width: 100%; height: 80px; overflow: hidden; text-align: center; -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.3); }
+@media (max-width: 992px) { #main-nav #nav-container { background: -webkit-linear-gradient(135deg, #ed135d, #8e0b43); } }
+@media (min-width: 992px) { #main-nav #nav-container { overflow: visible; height: auto; background-color: #dddddd; } }
 @media (min-width: 992px) { #main-nav #pull { display: none; } }
 #main-nav #pull a { float: left; width: auto; padding: 25px 10px; }
+@media (max-width: 992px) { #main-nav #pull a { background-color: transparent; } }
+#main-nav #pull .nav-hamburger { display: block; width: 30px; height: 30px; background: transparent url('data:image/svg+xml;charset=UTF-8,<svg height="12px" version="1.1" viewBox="0 0 22 12" width="22px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs><path d="M0.500836134,0 C0.224231975,0 0,0.214035034 0,0.504684448 L0,1.49531555 C0,1.77404508 0.217741728,2 0.500836134,2 L21.4991639,2 C21.775768,2 22,1.78596497 22,1.49531555 L22,0.504684448 C22,0.225954924 21.7822583,0 21.4991639,0 L0.500836134,0 Z M0.500836134,5 C0.224231975,5 0,5.21403503 0,5.50468445 L0,6.49531555 C0,6.77404508 0.217741728,7 0.500836134,7 L21.4991639,7 C21.775768,7 22,6.78596497 22,6.49531555 L22,5.50468445 C22,5.22595492 21.7822583,5 21.4991639,5 L0.500836134,5 Z M0.500836134,10 C0.224231975,10 0,10.214035 0,10.5046844 L0,11.4953156 C0,11.7740451 0.217741728,12 0.500836134,12 L21.4991639,12 C21.775768,12 22,11.785965 22,11.4953156 L22,10.5046844 C22,10.2259549 21.7822583,10 21.4991639,10 L0.500836134,10 Z" id="path-1"/></defs><g fill="none" fill-rule="evenodd" id="miu" stroke="none" stroke-width="1"><g id="nav-hamburger"><use fill="#fff" fill-rule="evenodd" xlink:href="#path-1"/><use fill="none" xlink:href="#path-1"/></g></g></svg>') 0 0 no-repeat; background-size: cover; }
 #main-nav #logo { float: left; margin-left: 20px; }
-#main-nav #logo a { padding: 0; width: 200px; height: 80px; float: left; background: url(../images/logo-text-only.svg) left center no-repeat; background-size: 80%; }
+#main-nav #logo a { padding: 0; width: 200px; height: 80px; float: left; background: url(../images/logo-text-only-white.svg) left center no-repeat; background-size: 80%; }
 @media (min-width: 768px) { #main-nav #logo a { width: 360px; } }
 @media (min-width: 992px) { #main-nav #logo a { height: 200px; background: url(../images/logo.svg) center top no-repeat; } }
 
@@ -1875,7 +1877,7 @@ section { padding-top: 40px; padding-bottom: 40px; }
 #home-title { height: 200px; }
 @media (min-width: 768px) { #home-title { height: 280px; } }
 @media (min-width: 992px) { #home-title { height: 300px; } }
-@media (min-width: 1170px) { #home-title { height: 500px; } }
+@media (min-width: 1170px) { #home-title { height: 485px; } }
 #home-title h1 { font-size: 6em; line-height: 0.8; }
 #home-title h4 { color: #ed135d; }
 #home-title img.arrow-inline { padding-right: 15px; vertical-align: middle; }
