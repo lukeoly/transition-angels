@@ -79,42 +79,42 @@ $(document).ready(function() {
 
 	//Contact Form Code:
 
-	// $(function (e) {
-	// 	$("#form-send").click(function (e) {
-	// 		var $error = 0;
-	// 		var name = $("#form-name").val();
-	// 		var email = $("#form-email").val();
-	// 		var text = $("#form-msg").val();
+	$(function (e) {
+		$("#form-send").click(function (e) {
+			var $error = 0;
+			var name = $("#form-name").val();
+			var email = $("#form-email").val();
+			var text = $("#form-msg").val();
 
 
-	// 		if(name == "" || email=="" || text=="" ){
-	// 			$('#details-error-wrap').fadeIn(1000);
-	// 			$error = 1;
-	// 		}else{
-	// 			$('#details-error-wrap').fadeOut(1000);
-	// 		}
+			if(name == "" || email=="" || text=="" ){
+				$('#details-error-wrap').fadeIn(1000);
+				$error = 1;
+			}else{
+				$('#details-error-wrap').fadeOut(1000);
+			}
 
 
 
-	// 		var dataString = 'name=' + name + '&email=' + email + '&text=' + text;
+			var dataString = 'name=' + name + '&email=' + email + '&text=' + text;
 
-	// 		if($error == 0){
-	// 			$.ajax({
-	// 				type: "POST",
-	// 				url: "mail.php",
-	// 				data: dataString,
-	// 				success: function () {
-	// 					$('#details-error-wrap').fadeOut(500);
+			if($error == 0){
+				$.ajax({
+					type: "POST",
+					url: "mail.php",
+					data: dataString,
+					success: function () {
+						$('#details-error-wrap').fadeOut(500);
 
-	// 					$('#form-sent').fadeIn(1000);
-	// 				}
-	// 			});
-	// 			return false;
-	// 		}
+						$('#form-sent').fadeIn(1000);
+					}
+				});
+				return false;
+			}
 
-	// 		e.preventDefault();
-	// 	});
-	// });
+			e.preventDefault();
+		});
+	});
 
 	// Filter the isotope masonry
 
