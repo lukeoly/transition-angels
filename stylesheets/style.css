@@ -1898,7 +1898,7 @@ section { padding-top: 40px; padding-bottom: 40px; }
 
 .testimonials { min-height: 820px; padding-bottom: 8%; padding-top: 8%; background: url("../images/testimonials-bg.jpg"); background-size: cover; background-attachment: fixed; }
 @media (min-width: 768px) { .testimonials { min-height: 1085px; } }
-@media (min-width: 992px) { .testimonials { min-height: 1040px; } }
+@media (min-width: 992px) { .testimonials { min-height: 1130px; } }
 @media (min-width: 768px) { .testimonials p { font-size: 23px; } }
 .testimonials .testimonial { background-color: rgba(221, 221, 221, 0.7); padding: 15px; }
 .testimonials .testimonial-triangle { width: 0; height: 0; border-left: 40px solid transparent; border-right: 0 solid transparent; border-top: 30px solid rgba(187, 187, 187, 0.7); }
