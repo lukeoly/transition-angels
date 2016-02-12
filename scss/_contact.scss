@@ -28,6 +28,7 @@
   color: $grey-dark;
   font-size: 4em;
   cursor: pointer;
+  display: block;
   &:hover {
     border: 4px solid $grey;
   }
