@@ -325,7 +325,7 @@
         </div>
 
         <div class="seven columns">
-          <form action="http://formspree.io/info@transitionangels.com.au">
+          <form action="http://formspree.io/info@transitionangels.com.au" method="POST">
             <input type="text" name="_gotcha" style="display:none" />
             <div class="row">
               <div class="six columns">
@@ -341,13 +341,15 @@
                 <textarea id="form-msg" name="message" placeholder="Message"></textarea>
               </div>
               <div class="four columns">
-                <a href="javascript: document.form.submit();" id="form-send" class="text-center primary-border-gradient">
+                <a href="#" onclick="$(this).closest('form').submit();" id="form-send" class="text-center primary-border-gradient">
                   <i class="foundicon-mail primary-text-gradient">
                   </i>
                   <h4 class="text-xbold text-center primary-text-gradient">
                     SEND
                   </h4>
                 </a>
+                <input class="hide" type="submit" id="form-input-submit" value="Send">
+
                 <input type="hidden" name="_next" value="/thanks.html" />
               </div>
             </div>
