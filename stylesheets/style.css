@@ -4640,39 +4640,37 @@ table.show-for-xlarge, table.show-for-large, table.hide-for-small, table.hide-fo
   border-right: 0 solid transparent;
   border-top: 30px solid #bbb; }
 
-#form-name {
+input[type="text"],
+input[type="email"],
+textarea {
   height: 40px;
   background-color: #eee;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-#form-email {
-  height: 40px;
-  background-color: #eee;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+#form-msg,
+textarea.textarea {
+  height: 135px; }
 
-#form-msg {
+#form-send,
+#saveForm {
   height: 135px;
-  background-color: #eee;
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
-
-#form-send {
-  height: 135px;
+  width: 100%;
   border-width: 4px;
+  background-color: #fff;
   color: #222;
   font-size: 4em;
   cursor: pointer;
   display: block; }
-  #form-send:hover {
+  #form-send:hover,
+  #saveForm:hover {
     border: 4px solid #777; }
-  #form-send h4 {
+  #form-send h4,
+  #saveForm h4 {
     margin-top: 0; }
-  #form-send i {
+  #form-send i,
+  #saveForm i {
     margin-top: 15px;
     display: inline-block; }
 

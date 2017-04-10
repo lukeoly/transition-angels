@@ -294,7 +294,7 @@
             CONTACT US
           </h2>
           <h4 class="text-book">
-            Get in touch with us today to discuss your project requirments!
+            Get in touch with us today to discuss your project requirements!
           </h4>
         </div>
 
@@ -325,7 +325,44 @@
         </div>
 
         <div class="seven columns">
-          <form action="http://formspree.io/info@transitionangels.com.au" method="POST">
+          <!-- New form -->
+          <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://transitionangels.wufoo.com/forms/zoi5gkl05vltwg/#public">
+          <div class="row">
+            <div class="six columns">
+              <input id="Field3" name="Field3" type="text" class="field text medium" value="" placeholder="Name" maxlength="255" tabindex="1" onkeyup="" />
+            </div>
+            
+            <div class="six columns">
+              <input id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" placeholder="Email *" maxlength="255" tabindex="2" required />
+            </div>
+            </div>
+
+            <div class="row">
+              <div class="eight columns">
+                <textarea id="Field6" name="Field6" class="field textarea medium" placeholder="Message" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup=""></textarea>
+              </div>
+
+              <div class="four columns">
+                <button id="saveForm" name="saveForm" type="submit" class="btTxt submit text-center primary-border-gradient">
+                  <i class="foundicon-mail primary-text-gradient">
+                  </i>
+                  <h4 class="text-xbold text-center primary-text-gradient">
+                    SEND
+                  </h4>
+                </button>
+              </div>
+              
+              <div class="hide">
+                <label for="comment">Do Not Fill This Out</label>
+                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                <input type="hidden" id="idstamp" name="idstamp" value="Ga+4skok2LefHUc9fC40fBuRF844+XDaid1/SkKPCrQ=" />
+              </div>
+            </div>
+          </form>
+
+
+          <!-- Old form -->
+          <!-- <form action="http://formspree.io/info@transitionangels.com.au" method="POST">
             <input type="text" name="_gotcha" style="display:none" />
             <div class="row">
               <div class="six columns">
@@ -369,25 +406,21 @@
                 Thankyou, your message has been sent.
               </div>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </section>
-
-
   </div><!-- end main container -->
+  
   <!-- Included JS Files (Compressed) -->
-  <script src="javascripts/foundation.min.js">
-  </script>
+  <script src="javascripts/foundation.min.js"></script>
+
   <!-- Initialize JS Plugins -->
-  <script src="javascripts/app.js">
-  </script>
-  <script src="javascripts/slider.min.js">
-  </script>
-  <script src="javascripts/jquery.isotope.min.js">
-  </script>
-  <script src="javascripts/scripts.js">
-  </script>
+  <script src="javascripts/app.js"></script>
+  <script src="javascripts/slider.min.js"></script>
+  <script src="javascripts/jquery.isotope.min.js"></script>
+  <script src="javascripts/scripts.js"></script>
+  <script src="javascripts/wufoo.js"></script>
 </body>
 
 </html>
