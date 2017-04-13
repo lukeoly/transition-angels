@@ -1,14 +1,36 @@
-$font-stack:
-  'Raleway',
-  "Helvetica Neue",
-  "Helvetica",
-  Helvetica,
-  Arial,
-  sans-serif;
+$font-stack: 'Raleway',
+'Helvetica Neue',
+'Helvetica',
+Helvetica,
+Arial,
+sans-serif;
 
-
-body {
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  direction: ltr;
   font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Headings
@@ -19,13 +41,52 @@ h4,
 h5,
 h6 {
   font-family: $font-stack;
+  font-weight: bold;
+  font-style: normal;
+  color: #222;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 14px;
+  small {
+    font-size: 60%;
+    color: #6f6f6f;
+    line-height: 0
+  }
   a {
     color: inherit;
   }
 }
 
+h1 {
+  font-size: 44px;
+}
+
 h2 {
   margin-bottom: ($space * 3);
+  font-size: 37px;
+}
+
+h3 {
+  font-size: 27px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h5 {
+  font-size: 17px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
 }
 
 // font weights
@@ -50,4 +111,13 @@ h2 {
 
 a {
   color: $primary;
+}
+
+ul,
+ol,
+dl {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+  list-style-position: outside;
 }

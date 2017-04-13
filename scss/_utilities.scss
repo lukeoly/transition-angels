@@ -23,6 +23,15 @@ $space: 15px;
   text-shadow:none;
 }
 
+.hide {
+  display: none;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 .no-margin-top      { margin-top: 0; }
 .margin-top-1       { margin-top: $space; }
 .margin-top-2       { margin-top: $space * 2; }
