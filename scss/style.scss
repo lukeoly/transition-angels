@@ -4,7 +4,10 @@
 @import 'flexboxgrid-overrides';
 @import '../bower_components/flexboxgrid-sass/flexboxgrid';
 
+$fa-font-path: "../fonts/font-awesome";
+@import '../bower_components/font-awesome/scss/font-awesome';
 
+@import '../bower_components/slick-carousel/slick/slick.scss';
 
 
 // @import 'foundation.min';

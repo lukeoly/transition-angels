@@ -96,7 +96,7 @@ section {
 }
 
 #services {
-  background-color: $grey-lightest-70;
+  background-color: $alto;
   p {
     font-size: 23px;
   }
@@ -122,30 +122,58 @@ section {
   background: url('../images/testimonials-bg.jpg');
   background-size: cover;
   background-attachment: fixed;
-  @media (min-width: $screen-small) {
-    min-height: 1085px;
-  }
-  @media (min-width: $screen-medium) {
-    min-height: 1130px;
-  }
+  
   p {
     @media (min-width: $screen-small) {
       font-size: 23px;
     }
   }
-  .testimonial {
-    background-color: $grey-lightest-70;
-    padding: $space;
+
+  .slick-list {
+    padding-bottom: 30px;
   }
+  
+  .testimonial {
+    position: relative;
+    background-color: $silver-70;
+    padding: 80px 90px;
+    
+    &::before,
+    &::after {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      display: block;
+      content: '';
+      background: url(../images/quote.svg) center center no-repeat;
+      background-size: contain;
+    }
+
+    &::before {
+      top: 20px;
+      left: 20px;
+    }
+
+    &::after {
+      bottom: 20px;
+      right: 20px;
+      transform: rotate(180deg);
+    }
+  }
+  
   .testimonial-triangle {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
     width: 0;
     height: 0;
     border-left: 40px solid transparent;
     border-right: 0 solid transparent;
-    border-top: ($space) * 2 solid $grey-light-70;
+    border-top: ($space) * 2 solid $silver-70;
   }
+
   i.foundicon-quote {
-    color: #FFF;
+    color: $white;
     font-size: 60px;
   }
 }
@@ -223,14 +251,14 @@ section {
     }
     a {
       font-weight: 800;
-      color: $grey-dark;
+      color: $mine-shaft;
       font-size: 17px;
     }
   }
 }
 
 .active-filter {
-  border-bottom: 3px solid $grey-dark;
+  border-bottom: 3px solid $mine-shaft;
 }
 
 .isotope {
@@ -332,7 +360,7 @@ section {
 // .team-member {
 //   overflow: hidden;
 //   p {
-//     background-color: $grey-lighter;
+//     background-color: $silver;
 //     padding: 10px 15px 20px;
 //     margin-bottom: 0;
 //   }

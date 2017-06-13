@@ -50,7 +50,7 @@ h6 {
   margin-top: 14px;
   small {
     font-size: 60%;
-    color: #6f6f6f;
+    color: $dove-grey;
     line-height: 0
   }
   a {
@@ -109,6 +109,19 @@ p {
   }
 }
 
+// Font alignment
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 a {
   color: $primary;
 }
@@ -120,4 +133,9 @@ dl {
   line-height: 1.6;
   margin-bottom: 17px;
   list-style-position: outside;
+}
+
+hr {
+  border: solid $alto;
+  border-width: 1px 0 0;
 }

@@ -4,15 +4,15 @@ input[type="email"],
 textarea {
   height: 40px;
   width: 100%;
-  background-color: #eee;
+  background-color: $gallery;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
   display: block;
   font-size: 14px;
-  margin: 0 0 12px 0;
+  margin: 0 0 14px 0;
   padding: 6px;
-      
+  box-sizing: border-box;
 } 
 
 #form-msg,
@@ -26,7 +26,7 @@ textarea.textarea {
   width: 100%;
   border-width: 4px;
   background-color: $white;
-  color: $grey-dark;
+  color: $mine-shaft;
   font-size: 4em;
   cursor: pointer;
   display: block;

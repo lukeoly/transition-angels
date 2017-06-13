@@ -2,8 +2,10 @@
   margin-bottom: 100px;
   z-index: 300;
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
+  height: 80px;
+  
   ul.nav-bar {
     height: auto;
     margin: 0;
@@ -18,7 +20,7 @@
   li {
     float: none;
     overflow: auto;
-    color: $grey-dark;
+    color: $mine-shaft;
     cursor: pointer;
     border: none;
     line-height: 20px;
@@ -38,8 +40,8 @@
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
-    background-color: $grey-lightest;
-    color: $grey-dark;
+    background-color: $alto;
+    color: $mine-shaft;
     @media (max-width: $screen-medium) {
       width: 100%;
     }
@@ -50,7 +52,7 @@
       padding: 30px;
     }
     &:hover {
-      background-color: $grey-lighter;
+      background-color: $silver;
     }
   }
   #nav-container {
@@ -66,7 +68,7 @@
     @media (min-width: $screen-medium) {
       overflow: visible;
       height: auto;
-      background-color: $grey-lightest;
+      background-color: $alto;
     }
   }
   #pull {

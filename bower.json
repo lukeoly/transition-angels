@@ -15,12 +15,15 @@
     "jquery-placeholder": "~2.0.7",
     "foundation": "4.3.2",
     "flexboxgrid-sass": "^8.0.5",
-    "normalize-scss": "normalize.scss#^6.0.0"
+    "font-awesome": "^4.6.3",
+    "normalize-scss": "normalize.scss#^6.0.0",
+    "slick-carousel": "^1.6.0"
   },
   "devDependencies": {
     "jquery.autocomplete": "devbridge/jQuery-Autocomplete#1.2.9",
     "lodash": "~2.4.1",
-    "flexboxgrid-sass": "^8.0.5"
+    "flexboxgrid-sass": "^8.0.5",
+    "normalize-strings": "normalize#^1.1.0"
   },
   "private": true
 }
