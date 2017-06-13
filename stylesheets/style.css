@@ -4600,6 +4600,7 @@
 
 input[type="text"],
 input[type="email"],
+input[type="tel"],
 textarea {
   height: 40px;
   width: 100%;
@@ -4616,6 +4617,48 @@ textarea {
 #form-msg,
 textarea.textarea {
   height: 135px; }
+
+label.control-label {
+  display: block;
+  font-weight: 400;
+  line-height: 2;
+  font-size: 16px;
+  color: #222; }
+
+.form-group {
+  margin-bottom: 15px; }
+
+.form-inline {
+  display: flex; }
+  .form-inline .form-group {
+    margin-right: 15px; }
+
+.radio {
+  display: none; }
+  .radio + label::before {
+    padding-right: 5px;
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\f10c';
+    color: #6f6f6f; }
+  .radio:checked + label::before {
+    content: '\f111';
+    color: #ed135d; }
+
+.checkbox {
+  margin-bottom: 5px; }
+  .checkbox input {
+    display: none; }
+    .checkbox input + label::before {
+      width: 1.28571em;
+      display: inline-block;
+      padding-right: 5px;
+      font: normal normal normal 14px/1 FontAwesome;
+      content: '\f096';
+      text-align: center;
+      color: #6f6f6f; }
+    .checkbox input:checked + label::before {
+      content: '\f046';
+      color: #ed135d; }
 
 #form-send,
 #saveForm {

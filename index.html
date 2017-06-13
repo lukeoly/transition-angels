@@ -311,37 +311,105 @@
               </div>
               
               <div class="col-xs-12 col-sm-6">
-                <input id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" placeholder="Email *" maxlength="255" tabindex="2" required />
+                <input id="Field8" name="Field8" type="tel" class="field text medium" value="" placeholder="Phone *" maxlength="255" tabindex="2" onkeyup="" />
               </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <input id="Field4" name="Field4" type="email" spellcheck="false" class="field text medium" value="" placeholder="Email" maxlength="255" tabindex="3" required />
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <input id="Field116" name="Field116" type="email" spellcheck="false" class="field text medium" value="" placeholder="Address" tabindex="4" required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-6">
+                <label class="control-label" for="Field115">Enquiring for:</label>
+                <input id="radioDefault_115" name="Field115" type="hidden" value="" />
+                <div class="form-inline">
+                  <div class="form-group">
+                    <input id="Field115_0" name="Field115" type="radio" class="field radio" value="Myself" tabindex="5" onchange="handleRadioOther(this.name, false);" checked="checked"/>
+                    <label class="choice" for="Field115_0">
+                      <span class="choice__text notranslate">Myself</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </div>
+                  <div class="form-group">
+                    <input id="Field115_1" name="Field115" type="radio" class="field radio" value="Friend or family member" tabindex="6" onchange="handleRadioOther(this.name, true);" />
+                    <label class="choice" for="Field115_1">
+                      <span class="choice__text notranslate">Friend or family member</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </div>
+                </div>
               </div>
 
-              <div class="row">
-                <div class="col-xs-12 col-sm-8">
-                  <textarea id="Field6" name="Field6" class="field textarea medium" placeholder="Message" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup=""></textarea>
-                </div>
 
-                <div class="col-xs-12 col-sm-4">
-                  <button id="saveForm" name="saveForm" type="submit" class="btTxt submit text-center primary-border-gradient">
-                    <i class="fa fa-envelope primary-text-gradient">
-                    </i>
-                    <h4 class="text-xbold text-center primary-text-gradient">
-                      SEND
-                    </h4>
-                  </button>
-                </div>
-                
-                <div class="hide">
-                  <label for="comment">Do Not Fill This Out</label>
-                  <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
-                  <input type="hidden" id="idstamp" name="idstamp" value="Ga+4skok2LefHUc9fC40fBuRF844+XDaid1/SkKPCrQ=" />
+              <div class="col-xs-12 col-sm-6">
+                <div class="form-group">
+                  <label class="control-label" for="Field15">Services you are interested in:</label>
+
+                  <div class="checkbox">
+                    <input id="Field15" name="Field15" type="checkbox" class="field checkbox" value="Decluttering" tabindex="7"     />
+                    <label class="choice" for="Field15">
+                      <span class="choice__text notranslate" >Decluttering</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="Field16" name="Field16" type="checkbox" class="field checkbox" value="Packing" tabindex="8"     />
+                    <label class="choice" for="Field16">
+                      <span class="choice__text notranslate" >Packing</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="Field17" name="Field17" type="checkbox" class="field checkbox" value="Unpacking" tabindex="9"     />
+                    <label class="choice" for="Field17">
+                      <span class="choice__text notranslate" >Unpacking</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input id="Field18" name="Field18" type="checkbox" class="field checkbox" value="Removalist" tabindex="10"     />
+                    <label class="choice" for="Field18">
+                      <span class="choice__text notranslate" >Removalist</span>
+                      <span class="choice__qty"></span>
+                    </label>
+                  </div>
                 </div>
               </div>
-            </form>
-          </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xs-12 col-sm-8">
+                <textarea id="Field6" name="Field6" class="field textarea medium" placeholder="Message" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup=""></textarea>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                <button id="saveForm" name="saveForm" type="submit" class="btTxt submit text-center primary-border-gradient">
+                  <i class="fa fa-envelope primary-text-gradient">
+                  </i>
+                  <h4 class="text-xbold text-center primary-text-gradient">
+                    SEND
+                  </h4>
+                </button>
+              </div>
+              
+              <div class="hide">
+                <label for="comment">Do Not Fill This Out</label>
+                <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                <input type="hidden" id="idstamp" name="idstamp" value="Ga+4skok2LefHUc9fC40fBuRF844+XDaid1/SkKPCrQ=" />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
-    </section>
-  </div><!-- end main container -->
+    </div>
+  </section>
+</div><!-- end main container -->
   
   <script src="javascripts/jquery.min.js"></script>
   <script src="javascripts/slick.min.js"></script>
